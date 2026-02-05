@@ -42,8 +42,9 @@ transform:scale(1.1);
 }
 
 img{
-width:120px;
+width:140px;
 margin:10px;
+border-radius:10px;
 }
 
 </style>
@@ -60,8 +61,8 @@ margin:10px;
 
 <br>
 
-<img src="https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif">
-<img src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif">
+<img id="gif1" src="https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif">
+<img id="gif2" src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif">
 
 </div>
 
@@ -72,6 +73,8 @@ let stage = 0;
 const question = document.getElementById("question");
 const btn1 = document.getElementById("btn1");
 const btn2 = document.getElementById("btn2");
+const gif1 = document.getElementById("gif1");
+const gif2 = document.getElementById("gif2");
 
 btn1.onclick = () => {
 
@@ -82,6 +85,9 @@ question.innerHTML = "timi ta mero mutu ko dhadkan hau kaka 😅";
 btn1.innerHTML = "Yes";
 btn2.innerHTML = "No";
 
+gif1.src="https://media.giphy.com/media/MDJ9IbxxvDUQM/giphy.gif";
+gif2.src="https://media.giphy.com/media/26ufdipQqU2lhNA4g/giphy.gif";
+
 }
 
 else if(stage === 1){
@@ -90,6 +96,9 @@ stage = 2;
 question.innerHTML = "Kaka xito aaau dherai Yaad aaiskyo yr 🥺";
 btn1.innerHTML = "1 month maa aauxu";
 btn2.innerHTML = "kaillei aaudaina";
+
+gif1.src="https://media.giphy.com/media/11sBLVxNs7v6WA/giphy.gif";
+gif2.src="https://media.giphy.com/media/ICOgUNjpvO0PC/giphy.gif";
 
 }
 
@@ -100,11 +109,26 @@ question.innerHTML = "your vatiz love you kaka 😚";
 btn1.innerHTML = "Kaka also vatiz❤️";
 btn2.innerHTML = "but Kaka doesn't";
 
+gif1.src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif";
+gif2.src="https://media.giphy.com/media/l2JhBoNin9yhqSDLO/giphy.gif";
+
 }
 
 else if(stage === 3){
 
-question.innerHTML = "🥰 Thank you Kaka ❤️";
+stage = 4;
+question.innerHTML = "khana khayeu ki nai kaka 😅";
+btn1.innerHTML = "khaya mug";
+btn2.innerHTML = "khaye vatiz";
+
+gif1.src="https://media.giphy.com/media/5GoVLqeAOo6PK/giphy.gif";
+gif2.src="https://media.giphy.com/media/xT0xeJpnrWC4XWblEk/giphy.gif";
+
+}
+
+else if(stage === 4){
+
+question.innerHTML = "❤️❤️❤️ LOVE YOU KAKA ❤️❤️❤️";
 btn1.style.display="none";
 btn2.style.display="none";
 
