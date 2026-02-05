@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kaka Love ❤️</title>
+
+<style>
+
+body{
+font-family:Arial;
+background:linear-gradient(135deg,#ff9a9e,#fad0c4);
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+margin:0;
+text-align:center;
+}
+
+.container{
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+max-width:400px;
+}
+
+button{
+margin:10px;
+padding:12px 20px;
+border:none;
+border-radius:10px;
+font-size:16px;
+cursor:pointer;
+background:#ff4d6d;
+color:white;
+transition:0.3s;
+}
+
+button:hover{
+transform:scale(1.1);
+}
+
+img{
+width:120px;
+margin:10px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h2 id="question">Kaka how much you love me ❤️</h2>
+
+<button id="btn1">100%</button>
+<button id="btn2">0%</button>
+
+<br>
+
+<img src="https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif">
+<img src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif">
+
+</div>
+
+<script>
+
+let stage = 0;
+
+const question = document.getElementById("question");
+const btn1 = document.getElementById("btn1");
+const btn2 = document.getElementById("btn2");
+
+btn1.onclick = () => {
+
+if(stage === 0){
+
+stage = 1;
+question.innerHTML = "timi ta mero mutu ko dhadkan hau kaka 😅";
+btn1.innerHTML = "Yes";
+btn2.innerHTML = "No";
+
+}
+
+else if(stage === 1){
+
+stage = 2;
+question.innerHTML = "Kaka xito aaau dherai Yaad aaiskyo yr 🥺";
+btn1.innerHTML = "1 month maa aauxu";
+btn2.innerHTML = "kaillei aaudaina";
+
+}
+
+else if(stage === 2){
+
+stage = 3;
+question.innerHTML = "your vatiz love you kaka 😚";
+btn1.innerHTML = "Kaka also vatiz❤️";
+btn2.innerHTML = "but Kaka doesn't";
+
+}
+
+else if(stage === 3){
+
+question.innerHTML = "🥰 Thank you Kaka ❤️";
+btn1.style.display="none";
+btn2.style.display="none";
+
+}
+
+};
+
+btn2.onclick = () => {
+
+if(stage === 0){
+
+if(btn2.innerHTML === "0%"){
+btn2.innerHTML = "Really 😭";
+}
+else if(btn2.innerHTML === "Really 😭"){
+btn2.innerHTML = "but I love you very much kaka 🥺";
+}
+else if(btn2.innerHTML === "but I love you very much kaka 🥺"){
+btn2.innerHTML = "kaka love you vana na yr";
+}
+else if(btn2.innerHTML === "kaka love you vana na yr"){
+btn2.innerHTML = "okay I hate you 🥹";
+}
+
+}
+
+};
+
+</script>
+
+</body>
+</html>
